@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Job Update - सरकारी नौकरी, परीक्षा, रिजल्ट, एडमिट कार्ड और Answer Key की जानकारी">
+<title>Job Update | सरकारी नौकरी, परीक्षा और परिणाम</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+    font-family:Arial,"Noto Sans Devanagari",sans-serif;
+    background:#060d1c;
+    color:#f5f7fb;
+    line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+
+.topbar{
+    background:#0b1427;
+    border-bottom:1px solid #202c40;
+    padding:10px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size:14px;
+    color:#b9c2d0;
+}
+.lang{color:#ffb51b;font-weight:bold}
+
+header{
+    background:#081122;
+    border-bottom:1px solid #202c40;
+    padding:18px 5%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+.logo-box{
+    width:50px;height:50px;
+    border-radius:13px;
+    background:#e4003a;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    font-weight:bold;
+}
+.logo h1{font-size:24px}
+.logo p{font-size:13px;color:#9ca8bb}
+
+nav{
+    display:flex;
+    gap:25px;
+    color:#d8deea;
+}
+nav a:hover{color:#ffb51b}
+
+.hero{
+    max-width:1200px;
+    margin:auto;
+    padding:70px 5% 45px;
+}
+.badge{
+    display:inline-block;
+    padding:8px 16px;
+    border:1px solid #a90038;
+    border-radius:30px;
+    color:#ffb51b;
+    background:#230b1c;
+    margin-bottom:20px;
+}
+.hero h2{
+    font-size:clamp(38px,7vw,70px);
+    line-height:1.1;
+    max-width:850px;
+}
+.hero h2 span{color:#ffb51b}
+.hero p{
+    color:#aeb8c8;
+    font-size:18px;
+    max-width:750px;
+    margin:22px 0;
+}
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+.btn{
+    padding:14px 25px;
+    border-radius:10px;
+    font-weight:bold;
+    display:inline-block;
+}
+.primary{background:#e4003a}
+.secondary{
+    background:#142137;
+    border:1px solid #334159;
+}
+
+.search{
+    max-width:1200px;
+    margin:0 auto 40px;
+    padding:0 5%;
+}
+.searchbox{
+    background:#111d31;
+    border:1px solid #334159;
+    border-radius:15px;
+    padding:18px 20px;
+    color:#9da9ba;
+    font-size:17px;
+}
+
+.stats{
+    max-width:1200px;
+    margin:auto;
+    padding:0 5% 60px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+.stat{
+    background:#0d192c;
+    border:1px solid #25334a;
+    border-radius:15px;
+    padding:20px;
+}
+.stat strong{
+    display:block;
+    font-size:28px;
+    color:#ffb51b;
+}
+.stat span{color:#9da9ba}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:40px 5%;
+}
+.section-title{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:22px;
+}
+.section-title h2{font-size:28px}
+.section-title a{color:#ffb51b}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+.card{
+    background:#0d192c;
+    border:1px solid #26364e;
+    border-radius:16px;
+    padding:22px;
+}
+.card h3{font-size:19px;margin-bottom:10px}
+.card p{color:#aeb8c8;font-size:14px;margin:5px 0}
+.card .tag{
+    display:inline-block;
+    background:#251525;
+    color:#ffb51b;
+    padding:4px 9px;
+    border-radius:20px;
+    font-size:12px;
+    margin-bottom:12px;
+}
+.card button{
+    margin-top:15px;
+    width:100%;
+    border:0;
+    padding:11px;
+    border-radius:8px;
+    background:#e4003a;
+    color:white;
+    font-weight:bold;
+}
+
+footer{
+    margin-top:50px;
+    background:#091223;
+    border-top:1px solid #202c40;
+    padding:40px 5%;
+    text-align:center;
+    color:#8f9aac;
+}
+footer h2{color:white;margin-bottom:8px}
+.disclaimer{
+    margin-top:20px;
+    font-size:13px;
+}
+
+@media(max-width:800px){
+    nav{display:none}
+    .cards{grid-template-columns:1fr}
+    .stats{grid-template-columns:1fr}
+    .hero{padding-top:45px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <span>विश्वसनीय अपडेट • हिंदी में</span>
+    <span class="lang">Hindi • English</span>
+</div>
+
+<header>
+    <div class="logo">
+        <div class="logo-box">J</div>
+        <div>
+            <h1>Job Update</h1>
+            <p>नौकरी • परीक्षा • परिणाम</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#jobs">नौकरियां</a>
+        <a href="#results">परिणाम</a>
+        <a href="#admit">एडमिट कार्ड</a>
+        <a href="#syllabus">सिलेबस</a>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+    <div class="badge">● नई भर्ती अपडेट</div>
+
+    <h2>
+        सरकारी नौकरी<br>
+        <span>की भरोसेमंद जानकारी</span>
+    </h2>
+
+    <p>
+        SSC, Railway, Banking, UPSC और राज्य स्तरीय परीक्षाओं की
+        नई भर्ती, एडमिट कार्ड, परिणाम और उत्तर कुंजी — एक ही जगह।
+    </p>
+
+    <div class="buttons">
+        <a href="#jobs" class="btn primary">ताज़ा भर्ती देखें</a>
+        <a href="#results" class="btn secondary">परिणाम</a>
+    </div>
+</section>
+
+<div class="search">
+    <div class="searchbox">
+        🔍 &nbsp; नौकरी, परीक्षा, परिणाम खोजें...
+    </div>
+</div>
+
+<div class="stats">
+    <div class="stat">
+        <strong>9+</strong>
+        <span>मुख्य श्रेणियां</span>
+    </div>
+
+    <div class="stat">
+        <strong>100+</strong>
+        <span>उपयोगी अपडेट</span>
+    </div>
+
+    <div class="stat">
+        <strong>Hindi</strong>
+        <span>सरल जानकारी</span>
+    </div>
+</div>
+
+<section id="jobs">
+    <div class="section-title">
+        <h2>ताज़ा सरकारी भर्तियां</h2>
+        <a href="#">सभी देखें →</a>
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+            <span class="tag">DEMO DATA</span>
+            <h3>SSC Recruitment 2026</h3>
+            <p>📌 कर्मचारी चयन आयोग</p>
+            <p>🎓 योग्यता: 10वीं / 12वीं / स्नातक</p>
+            <p>📅 अंतिम तिथि: जल्द अपडेट होगी</p>
+            <button>पूरी जानकारी देखें</button>
+        </div>
+
+        <div class="card">
+            <span class="tag">DEMO DATA</span>
+            <h3>Railway Recruitment 2026</h3>
+            <p>📌 भारतीय रेलवे</p>
+            <p>🎓 योग्यता: 10वीं / ITI / अन्य</p>
+            <p>📅 अंतिम तिथि: जल्द अपडेट होगी</p>
+            <button>पूरी जानकारी देखें</button>
+        </div>
+
+        <div class="card">
+            <span class="tag">DEMO DATA</span>
+            <h3>Banking Recruitment 2026</h3>
+            <p>📌 Banking Sector</p>
+            <p>🎓 योग्यता: स्नातक</p>
+            <p>📅 अंतिम तिथि: जल्द अपडेट होगी</p>
+            <button>पूरी जानकारी देखें</button>
+        </div>
+
+    </div>
+</section>
+
+<section id="results">
+    <div class="section-title">
+        <h2>ताज़ा परिणाम</h2>
+        <a href="#">सभी परिणाम →</a>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <span class="tag">DEMO DATA</span>
+            <h3>SSC Exam Result 2026</h3>
+            <p>परीक्षा परिणाम की जानकारी यहां दिखाई जाएगी।</p>
+            <button>परिणाम देखें</button>
+        </div>
+
+        <div class="card">
+            <span class="tag">DEMO DATA</span>
+            <h3>Railway Exam Result 2026</h3>
+            <p>नया परिणाम उपलब्ध होने पर यहां अपडेट होगा।</p>
+            <button>परिणाम देखें</button>
+        </div>
+    </div>
+</section>
+
+<section id="admit">
+    <div class="section-title">
+        <h2>एडमिट कार्ड</h2>
+        <a href="#">सभी देखें →</a>
+    </div>
+
+    <div class="cards">
+        <div class="card">
+            <span class="tag">DEMO DATA</span>
+            <h3>Upcoming Exam Admit Card</h3>
+            <p>एडमिट कार्ड की नई जानकारी यहां दिखाई जाएगी।</p>
+            <button>एडमिट कार्ड देखें</button>
+        </div>
+    </div>
+</section>
+
+<section id="syllabus">
+    <div class="section-title">
+        <h2>लोकप्रिय परीक्षाएं</h2>
+    </div>
+
+    <div class="cards">
+        <div class="card"><h3>SSC Exams</h3><p>SSC की परीक्षाओं की जानकारी</p></div>
+        <div class="card"><h3>Railway Exams</h3><p>Railway भर्ती और परीक्षा</p></div>
+        <div class="card"><h3>Banking Exams</h3><p>Banking examination updates</p></div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <h2>Job Update</h2>
+    <p>नौकरी • परीक्षा • परिणाम</p>
+
+    <div class="disclaimer">
+        Job Update एक स्वतंत्र सूचना वेबसाइट है।
+        यह किसी सरकारी विभाग की आधिकारिक वेबसाइट नहीं है।
+        आवेदन करने से पहले संबंधित विभाग की आधिकारिक वेबसाइट और
+        नोटिफिकेशन अवश्य देखें।
+    </div>
+
+    <p style="margin-top:20px;">© 2026 Job Update. All Rights Reserved.</p>
+</footer>
+
+</body>
+              </html>
