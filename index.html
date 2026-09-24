@@ -318,21 +318,18 @@
     <p>© 2026 Job Update. All Rights Reserved.</p>
 </footer>
 <script>
-document.querySelectorAll('.btn').forEach(function(button) {
+document.querySelectorAll('.job-item .btn').forEach(function(button) {
     button.addEventListener('click', function(event) {
         event.preventDefault();
 
-        const card = this.closest('.job-card');
+        const job = this.closest('.job-item');
+        const title = job.querySelector('h3')?.innerText || 'Job Details';
 
-        if (card) {
-            const title = card.querySelector('h3')?.innerText || 'Job Details';
-
-            alert(
-                'Job Details\n\n' +
-                'Post: ' + title + '\n\n' +
-                'Full details will be available soon.'
-            );
-        }
+        alert(
+            'Job Details\n\n' +
+            'Post: ' + title + '\n\n' +
+            'Full details will be available soon.'
+        );
     });
 });
 </script>
