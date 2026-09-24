@@ -317,21 +317,6 @@
     <p>सरकारी नौकरी • परीक्षा • रिजल्ट • एडमिट कार्ड</p>
     <p>© 2026 Job Update. All Rights Reserved.</p>
 </footer>
-<script>
-document.querySelectorAll('.job-item .btn').forEach(function(button) {
-    button.addEventListener('click', function(event) {
-        event.preventDefault();
 
-        const job = this.closest('.job-item');
-        const title = job.querySelector('h3')?.innerText || 'Job Details';
-
-        alert(
-            'Job Details\n\n' +
-            'Post: ' + title + '\n\n' +
-            'Full details will be available soon.'
-        );
-    });
-});
-</script>
 </body>
 </html>
