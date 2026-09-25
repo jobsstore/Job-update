@@ -7,7 +7,48 @@
     <title>Job Update - Government Jobs & Exam Updates</title>
 
     <meta name="description" content="Latest information on government jobs, recruitment, exams, admit cards, results and government schemes.">
+.three-columns{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+    margin:20px 0;
+}
 
+.section-box{
+    background:#fff;
+    border:1px solid #ccc;
+    box-shadow:0 2px 5px #ccc;
+}
+
+.section-box h2{
+    margin:0;
+    padding:10px;
+    text-align:center;
+    background:#8b0000;
+    color:white;
+    font-size:22px;
+}
+
+.section-box ul{
+    margin:0;
+    padding:15px 25px;
+}
+
+.section-box li{
+    margin-bottom:14px;
+}
+
+.section-box a{
+    color:#0645ad;
+    text-decoration:underline;
+    font-size:16px;
+}
+
+@media(max-width:700px){
+    .three-columns{
+        grid-template-columns:1fr;
+    }
+}
     <style>
         * {
             margin: 0;
@@ -247,7 +288,42 @@
 </nav>
 
 <div class="container">
+<div class="three-columns">
 
+    <div class="section-box">
+        <h2>Result</h2>
+        <ul>
+            <li><a href="result.html">SSC CGL Result 2026</a></li>
+            <li><a href="result.html">Railway Result 2026</a></li>
+            <li><a href="result.html">Bihar Board Result 2026</a></li>
+            <li><a href="result.html">NEET Result 2026</a></li>
+            <li><a href="result.html">Banking Result 2026</a></li>
+        </ul>
+    </div>
+
+    <div class="section-box">
+        <h2>Admit Card</h2>
+        <ul>
+            <li><a href="#">SSC Admit Card 2026</a></li>
+            <li><a href="#">Railway Admit Card 2026</a></li>
+            <li><a href="#">UP Police Admit Card 2026</a></li>
+            <li><a href="#">Bihar STET Admit Card 2026</a></li>
+            <li><a href="#">NEET Admit Card 2026</a></li>
+        </ul>
+    </div>
+
+    <div class="section-box">
+        <h2>Latest Job</h2>
+        <ul>
+            <li><a href="#">SSC CGL 2026 Online Form</a></li>
+            <li><a href="#">Railway Recruitment 2026</a></li>
+            <li><a href="#">Bihar Teacher Vacancy 2026</a></li>
+            <li><a href="#">Banking Jobs 2026</a></li>
+            <li><a href="#">UP Police Recruitment 2026</a></li>
+        </ul>
+    </div>
+
+</div>
     <div class="notice">
         🔔 Latest Update: Check the latest government jobs and exam updates here
     </div>
